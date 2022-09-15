@@ -197,6 +197,9 @@ const addCategory = () => {
       // H.elem_type.textContent = elem.name;
       currentFilter.cateqory = elem.name; 
       sort();
+      setTimeout(()=> H.categoryHover.classList.remove('open'),200)
+     
+     
       // console.log(1);
       // H.categoryHover.classList.add('none')
       // setTimeout(() => H.categoryHover.classList.remove('none'), 300)
