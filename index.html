@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Black_CRM</title>
+</head>
+
+<body>
+    <div class="Header">
+        <div class="G_C_header">
+            <a href="">
+                <h1>Dark_CRM</h1>
+            </a>
+            <button id="creat_category">
+                Создать категорию
+            </button>
+            <button id="creat_tranzaction">
+                Создать транзакцию
+            </button>
+
+        </div>
+    </div>
+    <div class="G_C_Chart  center">
+        <div class="C_Chart maxW center">
+
+            <div class="C_buttons">
+                <button slot="all" class="active">Все</button>
+                <button slot="income">Доход</button>
+                <button slot="consumption">Расход</button>
+            </div>
+
+            <div style="padding: 30px;">
+                <div class="C_myChart">
+                    <!-- <canvas id="myChart"></canvas> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="G_C_AllGrafic  center">
+        <div class="C_AllGrafic maxW">
+        </div>
+        <div class="C_AllGrafic maxW">
+
+        </div>
+        <div class="C_AllGrafic maxW">
+
+        </div>
+    </div>
+
+
+
+    <div class="G_C_table  center">
+        <div class="C_table maxW">
+            <div class="C_sort_top">
+                <button id="category" class="category">
+                    Категория
+                    <div id="categoryHover" class="categoryHover">
+
+                    </div>
+                </button>
+
+                <div class="C_sort_date">
+                    <div class="sort_date">
+                        <p>От</p>
+                        <input id="input_date" slot="ot" type="date">
+                    </div>
+
+                    <div class="sort_date">
+                        <p>До</p>
+                        <input id="input_date" slot="from" type="date">
+                    </div>
+                </div>
+
+            </div>
+            <div class="C_for_table">
+
+
+                <div class="table" id="table">
+
+                    <div class="table_elem main">
+                        <div id="elem_type" class="elem_type elem">Тип</div>
+                        <div class="line"></div>
+                        <div class="elem_currency elem">
+                            <select id="currency">
+
+                            </select>
+                        </div>
+                        <div class="line"></div>
+                        <button class="elem_amount elem" id="elem_amount">Сумма</button>
+                        <div class="line"></div>
+                        <div class="elem_description elem">Описание</div>
+                        <div class="line"></div>
+                        <div class="elem_date elem">Дата</div>
+                    </div>
+                    <div class="" id="table_data">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="C_addMore">
+
+                <button id="addMore" class="addMore">Больше</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal" class="modal">
+        <button class="modal_close" id="modal_close">X</button>
+        <div class="content_modal" id="content_modal">
+
+        </div>
+    </div>
+    
+    
+    <script src="date.js"></script>
+    <script src="fch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.2.3/js/dataTables.fixedHeader.min.js"></script>
+    <script src="scritp.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
