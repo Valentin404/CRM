@@ -197,7 +197,7 @@ const addCategory = () => {
       // H.elem_type.textContent = elem.name;
       currentFilter.cateqory = elem.name; 
       sort();
-      setTimeout(()=> H.categoryHover.classList.remove('open'),200)
+      setTimeout(()=> H.categoryHover.classList.remove('open'),800)
      
      
       // console.log(1);
@@ -307,7 +307,7 @@ const addClassOpenForCategoryHover = () => {
     H.categoryHover.classList.add('open')
   }
   H.category.onblur = () => {
-    setTimeout(()=>  H.categoryHover.classList.remove('open'),200)
+    setTimeout(()=>  H.categoryHover.classList.remove('open'),400)
    
   }
 }
