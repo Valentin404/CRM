@@ -300,7 +300,7 @@ const sort = () => {
   // creatChart()
 }
 const addClassOpenForCategoryHover = () => {
-  H.category.onfocus = () => {
+  H.category.onclick = () => {
     H.categoryHover.classList.add('open')
   }
   H.category.onblur = () => {
